@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Class Method</h2>
+
+    <p>How to define and use a Class method.</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+
+        class Person {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+
+            }
+            age(year) {
+                let date = new Date();
+                return year - this.year;
+            }
+        }
+
+        //here make year
+        let year = new Date().getFullYear();
+
+
+        let person1 = new Person("isha", 2001);
+        document.getElementById("demo").innerHTML =
+            "person1's age is " + person1.age(year) + " years old.";
+        //also here pass the parameter in the class also 
+
+
+        let person2 = new Person("neha", 2002)
+
+        document.getElementById("demo1").innerHTML =
+        "person2's age is " + person2.age(year) + " years old.";
+
+
+
+    </script>
+</body>
+
+</html>

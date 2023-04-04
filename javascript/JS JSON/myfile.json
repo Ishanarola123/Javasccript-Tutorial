@@ -1,0 +1,16 @@
+
+{
+    "name": "isha",
+    "mobile": 1234567890,
+    "city": "surat",
+    "course": [
+        "java",
+        "c",
+        "php",
+        "android"
+    ],
+    "Address": {
+        "Area": "Kataragm",
+        "pin": 395004
+    }
+}

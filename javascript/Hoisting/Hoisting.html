@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script 
+        or the current function).
+
+    </p>
+    <p id="demo"> </p>
+    <script>
+        x = 5; // Assign 5 to x
+
+        elem = document.getElementById("demo"); // Find an element 
+        elem.innerHTML = x;           // Display x in the element
+
+        var x; // Declare x
+        //here variable declaration after it has been used
+//*************************************************************************************
+//here variable declaration before it has been used 
+
+        var x; // Declare x
+        x = 5; // Assign 5 to x
+
+        elem = document.getElementById("demo"); // Find an element
+        elem.innerHTML = x;      
+    </script>
+</body>
+
+</html>

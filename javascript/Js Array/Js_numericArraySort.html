@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Numeric Array sorting in javaascript </h1>
+ <p>Using the compare function</p>
+
+ <p id="demo"></p>
+
+ <button onclick="myFunction1()">Sort Alphabetically</button>
+ <button onclick="myFunction2()">Sort Numerically</button>
+ <button onclick="myArrayMax()">Find max element </button>
+ <button onclick="myArrayMin()">Find min element </button>
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<button onclick="sortobject()">sort object </button>
+</body>
+<script>
+    const points = [40, 100, 1, 5, 25, 10];
+   document.getElementById("demo").innerHTML = points;
+
+ let myFunction1=()=>{
+    //sort the Alphabetically
+    document.getElementById("demo1").innerHTML= "Alphabetically sorted: " +  points.sort();
+ }
+ let myFunction2=()=>{
+    //sort the Numerically
+    document.getElementById("demo2").innerHTML= "Numerically sorted: " +  points.sort(function(a, b){return a - b});
+    //we can also make another way also like bubble sort,insertationsort
+
+ }
+
+let  myArrayMax=()=>{
+   //Math.max.apply()
+  document.getElementById("demo3").innerHTML= "The max elemenet is : " +  Math.max.apply(null, points);
+    
+}
+let  myArrayMin=()=>{
+   //Math.max.apply()
+  document.getElementById("demo4").innerHTML= "The min element is : " +  Math.min.apply(null, points);
+    
+}
+
+ //This way also find the max element of the array
+// function myArrayMax(arr) {
+//   let len = arr.length;
+//   let max = -Infinity;
+//   while (len--) {
+//     if (arr[len] > max) {
+//       max = arr[len];
+//     }
+//   }
+//   return max;
+// }
+
+//Js object sort
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+displayCars("demo5");
+
+let sortobject=()=>{
+    cars.sort(function(a, b){return a.year - b.year});
+    displayCars("demo7");
+}
+    
+function displayCars(demo) {
+  document.getElementById(demo).innerHTML =
+  cars[0].type + " " + cars[0].year + "<br>" +
+  cars[1].type + " " + cars[1].year + "<br>" +
+  cars[2].type + " " + cars[2].year;
+}
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Math.random()</h2>
+
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between 0
+        and 100 (both included):</p>
+
+
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(50,100)">Click Me</button>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+
+
+    <script>
+
+
+        //here we can just include the min and not include max element 
+        function getRndInteger(min, max) {
+            let r = Math.random();
+            document.getElementById("demo1").innerHTML = Math.floor(r * (max - min));
+            document.getElementById("demo1").innerHTML = Math.floor(r * (max - min)) + min;
+            //here we can not add min then it's okay bcz here min value is 0 but if we want that min value is something like diffrent then we need to specify that what is the number it should be come
+            return Math.floor(r * (max - min)) + min;
+        }
+
+        //here we can also include both max and min like in this way
+
+        // function getRndInteger(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+    </script>
+</body>
+
+</html>

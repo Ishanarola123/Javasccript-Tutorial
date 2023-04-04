@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JS array</h2>
+    <p>Using For Loop</p>
+    <p id="demo"></p>
+
+    <p>Using For each Loop</p>
+    <p id="demo2"></p>
+
+    <p>Using For each loop with function</p>
+    <p id="demo3"></p>
+
+    <p>associative myArray</p>
+    <p id="demo4"></p>
+</body>
+<script>
+    const cars = ["Saab", "Volvo", "BMW"];
+    console.log(cars);
+    //here we can not change the whole array becase of constant but we just add elemeent and remove element from the array 
+
+    //we can add element in the array using the push method
+    cars.push("Eartiga");
+    
+
+    //we can also add the item with using the length properties
+    cars[cars.length + 1] = "Shift";
+
+    //we can also add item as after two more elements also means higher than last order of array
+    cars[cars.length + 2] = "Farari";
+
+     //we can remove last element in the array using the push method
+    // cars.pop();
+
+    //remove first element we use the shift method
+    // cars.shift();
+
+    //add the element into begining use unshift method 
+    cars.unshift("XUV")
+    //array peoperties and methods
+    let length = cars.length;
+    console.log(length);
+
+
+    //for loop
+    let text = "<ul>";
+    for (let i = 0; i < length; i++) {
+        text += `<li> ${cars[i]} </li>`;
+    }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+
+    //for each loop
+    let text2 = "<ul>";
+    for (const i of cars) {
+        text2 += `<li> ${i} </li>`;
+    }
+    text2 += "</ul>";
+
+    document.getElementById("demo2").innerHTML = text2;
+
+    //we can also call the function in for each loop 
+
+
+    let text3 = "<ul>";
+    cars.forEach(myfunction);
+
+    function myfunction(i) {
+        text3 += `<li> ${i} </li>`;
+    }
+    text3 += "</ul>";
+    document.getElementById("demo3").innerHTML = text2;
+
+    //This way create an array that is called as associative array 
+    const person = [];
+    person[0] = "John";
+    person[1] = "Doe";
+    person[2] = 46;
+    document.getElementById("demo4").innerHTML = person[0] + " " + person.length;
+
+//the diffrence between array and object  ---> the only diffrence is  based on the indexes
+//     In JavaScript, arrays use numbered indexes.  
+// In JavaScript, objects use named indexes.
+
+// You should use objects when you want the element names to be strings (text).
+// You should use arrays when you want the element names to be numbers.
+
+//check that array type it is an arraay or object
+let type= typeof cars;
+console.log(type);
+
+console.log(Array.isArray(cars));
+console.log(cars instanceof Array);
+
+
+</script>
+
+</html>

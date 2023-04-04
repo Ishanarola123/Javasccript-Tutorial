@@ -1,0 +1,35 @@
+1.Js Array methods implementation demo revised 
+2.Js Array Prototype 
+3.Object prototype 
+4.object constructor and class 
+5.inheritance class (extend keyword) 
+6.Date Utc day, month,date,hour, Date Parse method 
+7.Date Prototype 
+8.Difference between reduce, map and filter 
+9.Difference between map and foreach loop 
+10.String prototype 
+11.Revised Js objects,Json 
+
+total=15, i=5;
+...
+text.substring(4,11);
+0.7999999
+5--
+true
+prototype
+8--
+
+1.Javascript object 
+2.Javascript Json 
+3.Js async 
+4.Js objects 
+5.Js arrays 
+6.Js regular expression 
+7.Js Dom - Node List 
+8.Js events- prevent default 
+9.Js difference between map, reduce,filter 
+10.Js strings search with regular expression 
+11.Js strings match method with regular expression 
+12.Difference between search and match method 
+13.Difference between indexOf and search method 
+14.solved many tricky question based on the array and strings as well as js variable scope.

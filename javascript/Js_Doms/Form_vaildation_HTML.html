@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid {
+            border: 1px solid red
+        }
+
+        input:vvalid {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="myForm" name="myForm" onsubmit="return(validate());submitForm();return false;">
+
+        Name
+        <input type="text" name="Name" />
+        Password
+        <input type="password" name="password">
+        <br>
+        Re-enter Password
+        <input type="password" name="password2"/>
+        <br>  
+        EMail
+        <input type="text" name="EMail" />
+        <br>
+        Zip Code
+        <input type="text" name="Zip" />
+        <br>
+        Country
+
+        <select name="Country">
+            <option value="-1" selected>[choose yours]</option>
+            <option value="1">USA</option>
+            <option value="2">UK</option>
+            <option value="3">INDIA</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit"/>
+
+
+        </table>
+    </form>
+    <script src="./Form_validation.js">
+
+
+    </script>
+</body>
+
+</html>

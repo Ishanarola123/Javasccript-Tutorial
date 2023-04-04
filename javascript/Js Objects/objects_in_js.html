@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <!-- There are no needded to declare strings, Numbers,and Booleans as Objects! -->
+    
+    <script>
+
+        //object has properties and methods also.
+
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        //access the object 
+        // document.write(person.firstName + person.lastName + person.fullName + person.id);
+        document.getElementById("demo").innerHTML = person.fullName();
+        //without parentthesis you can get only function defination
+
+        fullName = person.fullName;
+        fullName = person.fullName();
+        console.log(fullName);
+
+
+
+        const person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return firstName + " " + lastName;
+            }
+        };
+        //here can not sccess full name value
+        //becase it has no refrence when ever you want to that object's properties value you want to be access as in varibles also then this keyword.
+        document.getElementById("demo2").innerHTML = person.fullName();
+        fullName = person2.fullName();
+        // console.log(fullName);
+
+
+
+        
+    </script>
+</body>
+
+</html>

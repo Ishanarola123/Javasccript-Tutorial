@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Object fetch in loops with in For in loops </p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+
+    <h4>Here the main difference between for in loop and for of loop in array </h4>
+    <p>For in- loop when we have object and we focus on the string values then we use for in loop : in for in loops there are use key value pair</p>
+    <p>for of loop when we have just a values based then we only for of loop ,here we just use the value of the values</p>
+
+
+    <script>
+        const person = {
+            firstname: "isha",
+            lastname: "narola",
+            age: 22
+        }
+        document.getElementById("demo").innerHTML = person.firstname + person.lastname + person.age;
+        console.log(person);
+
+        let text = "";
+        for (let x in person) {
+            text += person[x];
+        }
+        document.getElementById("demo2").innerHTML = text;
+
+        const person1 = ["isha", "narola"]
+        let text5 = "";
+        for (let y of person1) {
+            text5 += y;
+
+        }
+        document.getElementById("demo6").innerHTML = `using the for of loop ${text5} `;
+
+        // there are error are there 
+
+        // The for in loop iterates over a person object
+        // Each iteration returns a key (x)
+        // The key is used to access the value of the key
+        // The value of the key is person[x]
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+
+        function myFunction(value, index, array) {
+            txt += value + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = txt;
+
+        const cars = ["BMW", "Volvo", "Mini"];
+
+        let text1 = "";
+        for (let x of cars) {
+            text1 += x;
+        }
+        document.getElementById("demo4").innerHTML = text1;
+
+        let language = "JavaScript";
+
+        let text3 = "";
+        for (let x of language) {
+            text3 += x + "<br>";
+        }
+
+        document.getElementById("demo5").innerHTML = text3;
+
+    </script>
+</body>
+
+</html>

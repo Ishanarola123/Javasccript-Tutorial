@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .result {
+        font-size: 20px;
+        font-weight: 500;
+        color: blueviolet;
+    }
+</style>
+</head>
+<body>
+<h1>Strict equality vs Loose equality</h1>
+<div class="result"></div>
+<br />
+<button class="Btn">CLICK HERE</button>
+<h3>Click on the above button see some comparisons using loose equality and
+strict equality</h3>
+<script>
+    let resEle = document.querySelector(".result");
+    let BtnEle = document.querySelector(".Btn");
+    BtnEle.addEventListener("click", () => {
+        resEle.innerHTML = "According to loose equality <br>";
+        if (1 == "1") {
+            resEle.innerHTML += "1 is equal to '1'<br>";
+        }
+        if (undefined == null) {
+            resEle.innerHTML += "undefined is equal to null <br>";
+        }
+        resEle.innerHTML += "<br>According to strict equality <br>";
+        if (1 === "1") {
+            resEle.innerHTML += "1 is equal to '1'<br>";
+        } else {
+            resEle.innerHTML += "1 is not equal to '1'<br>";
+        }
+        if (undefined === null) {
+            resEle.innerHTML += "undefined is equal to null <br>";
+        } else {
+            resEle.innerHTML += "undefined is not equal to null <br>";
+        }
+    });
+</script>
+</body>
+</html>

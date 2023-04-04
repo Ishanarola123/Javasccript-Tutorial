@@ -1,0 +1,233 @@
+
+    1.Js Home 
+    2.Js introduction 
+    3.Js where TO 
+    4.Js Output 
+    5.Js statements 
+    6.Js Syntax 
+    7.Js comments 
+    8.Js variables 
+    9.JS Let 
+    10.Js const 
+    11.Js operators 
+    12.Js Arithmetics 
+    13.Js Assignment 
+    14.Js datatypes 
+    15.Js functions 
+    16.Js objects 
+    17.Js strings 
+
+
+
+
+    1.Javascript events 
+    2.Javascript String methods and Search 
+    3.Js String Templetes 
+    4.Js Numbers 
+    5.Js BigInt 
+    6.Js Number Methods 
+    7.Js Number Properties 
+    8.Js Arrays 
+    9.Js ArraysMethods 
+    10.Js Array sort 
+    11.Js Array Iteration 
+    12.Js Array Const 
+
+
+
+1.Js Dates 
+2.Js date formats 
+3.Js date Get Methods 
+4.Js date Set Methods 
+5.Js Math 
+6.Js Random 
+7.Js Booleans 
+8.Js comparisons 
+9.Js If else 
+10.Js Switch 
+11.Js loop for 
+12.Js loop for in 
+13.Js loop For Of 
+14.Js Loop While 
+15.Js Break 
+16.Js Iterations 
+17.Js Sets 
+18.Js Maps 
+19.Js typesof 
+20.Js primitive and non primitive data 
+21.Js type conversion 
+22.Js BitWise 
+23.Js Regular expression(search and match method of strings)
+
+
+
+    1.Js Regular expression
+    2.Js Precedence
+    3.Js Errors
+    4.Js scopes
+    5.Js Hosting
+    6.Js this keyword
+    7.Js Map object
+    8.Js Arrow functions
+    9.Js classes
+    10.Js Modules
+    11.JS Json
+    12.Js debugging
+    13.JS style Guide
+    14.Js object definition,properties,methods and display
+
+
+1.Object Constructor
+2.Object Prototypes
+3.Object Iterables
+4.Object Sets and maps
+5.Difference between Maps and Objects
+6.Object References
+7.Js function definition, self invoking function, function Hosting
+8.Function Parameters
+9.Function invocation
+10.Function call
+11.Function Apply
+12.Function bind
+13.Js Oops constructor with dynamic data object
+
+
+Js oops-Encapsulation 
+Js oops-Abstraction 
+Js class-inheritance 
+Js-class-polymorphism 
+Js-class-Static 
+Js-Asynchronous 
+Js-Promises 
+Js-Async/wait 
+Js-HTMLDOM:-Dom methods, Dom document,Dom Elements, Dom Html, Dom forms , form validation 
+Js Form -with validation 
+Dom Event Listener, Dom Events 
+DOM navigation 
+DOM nodes 
+DoM collections 
+DoM Node Lists 
+Js Browser BOM:-Js Window,Js Screen,Js Location,Js History 
+Js popup Alert 
+
+
+
+
+1.Js Timing 
+2.Js Timing Task- Stopwatch,clock 
+3.Js Cookies Concept 
+4.Js Async function -Implementation demo 
+5.Json Intro 
+6.Json Syntex 
+7.Json Datatypes 
+8.Json Intro,why Json used? 
+9.Json syntex 
+10.Json vs XML 
+11.Json Datatypes 
+12.Json Parse 
+13.Json Stringify 
+14.Json Object 
+15.Json Arrays 
+16.Json Server 
+
+1.Json Map -Json in Variable 
+2.Fetch data from File 
+3.Error Handling in Fetch 
+4.Fetch data using promise then chain 
+5.Fetch data using async await 
+6.Fetch data from Json File 
+7.Make demo task for fetch data 
+8.Fetch data from Remote ApI-dummy data ,covid19 data 
+9.Web ApI Introduction 
+10.Jquery selector 
+11.jQuery HTML 
+12.JQuery CSS 
+13.JQuery DOM 
+14.Javascript Form validation API-check validity() 
+
+
+
+00:00:00 Make an HTTP Request
+00:02:47 Handling Server Response
+00:04:47 Response Handling Function
+00:07:51 Ajax Request Response
+00:10:18 Project Setup
+00:13:35 Making an HTTP Request and Handling Server Response
+00:27:01 Various readyState
+00:38:38 Making an HTTP Request and Handling Server Response with onload
+00:44:16 XMLHttpRequestEventTarget
+00:44:55 onload
+00:45:52 onprogress
+00:46:52 onerror
+00:47:10 onloadstart
+00:47:27 onloadend
+00:47:38 onabort
+00:47:50 ontimeout
+00:48:36 Coding - onload, onprogress, onerror, onloadstart, onloadend, onabort, ontimeout
+00:57:31 XMLHttpRequest Properties and Methods - statusText, response, responseText, responseURL, withCredentials, responseType, setRequestHeader(), getResponseHeader(), getAllResponseHeaders() 
+01:04:48 Ajax with Plain Text Data
+01:09:46 Ajax with JSON Data
+01:21:35 Ajax with XML Data
+01:42:39 Ajax with API GET Request
+02:01:11 Ajax with API POST Request
+
+
+1.AJAX-Make an HTTP Request 
+2.AJAX-Handling Server Response 
+3.AJAX-Response Handling Function 
+4.AJAX- Ajax Request Response 
+5.AJAX-Making an HTTP Request and Handling Server Response 
+6.AJAX -Readystate properties 
+7.Making an HTTP Request and Handling Server Response with onload 
+8.XMLHttpRequestEventTarget like onload,on progression error,onloadstart,onloadeend,onabort,ontimeout 
+9.AJAX-Fetch data from file and json file and xml file also. 
+10.Make contact form with pure Javascript(with validation) 
+11.webstorage API: Get data into local storage 
+
+
+1.How to create Crud Application with local storage
+2.Javascript Crud
+3.Javascript database tutorial
+4.Insert data into local storage
+5.Read data from Local storage
+6.Update data from Local storage
+7.Delete data from Local storage 
+8.clear all data from Local storage
+9.Fetch data when page load
+
+
+1.How to create Crud Application with local storage 
+2.Form validation 
+3.Insert data into local storage 
+4.Read data from Local storage 
+5.Update data from Local storage 
+6.Delete data from Local storage 
+7.Clear all data from Local storage 
+8.Fetch data when page load 
+
+
+1.Json HTML
+2.Reference Link refer -Js Array
+3.Js Array methods:slice, pop,push,reverse,sort,fill, index, charAt(),splice etc...
+4.Js classes-constructor, static , super keyword
+5.Js cookies , Js regular expression
+6.Js Dates
+7.Js APi fetch, history,,validation ,Js metacharacters
+8.HTML Dom token list
+9.HTML DOMToken list methods and properties
+10.Js Error-name, message
+11.Js Global -decodeUri,decode URI component(),encode URI
+12.JS Eval,Js infinity,isFinite(),isNAN() all the methods
+13.Js JSON: parse(),stringy(),Json Math, Json Object
+
+
+1.Revised Js Strings:-all methods
+2.Js Loops [Done]
+3.Js search box implementation
+4.Js Objects revised
+5.Js error handling revised
+6.api call with AJAx
+7.Difference between object and JSON
+8.Js Array methods revision
+9.Js iteration
+10.Js storage session and Local

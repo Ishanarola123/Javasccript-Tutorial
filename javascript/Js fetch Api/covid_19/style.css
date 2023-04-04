@@ -1,0 +1,89 @@
+/* I always reset all the html elements */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+	color: #1076e3;
+}
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+	color: #090a0a;
+}
+
+table{
+	width:  1000px;
+	margin: 30px auto;
+}
+
+table th{
+	padding: 10px 0;
+	background-color:#c7d0d3;
+	
+	/* background-color: #fff; */
+	border:  thin solid #085486;
+}
+
+table td{
+	padding: 10px;
+	border:  thin solid #085486;
+	width: 18%;
+	text-align: center;
+	background-color: #f4f4f4;
+}
+
+
+
+table td.total-price{
+	font-weight: bold;
+	font-size: 22px;
+}
+table a{
+	text-decoration: none;
+	color: darkred;
+	background-color: #ffecef;
+	padding: 10px 15px;
+}
+table a:active{
+	background-color: #ccf4d6;
+	color:  green;
+}
+
+table select{
+	padding: 10px;
+	width:  200px;
+	font-size: 16px;
+	border: thin solid #d4d4d4;
+	background-color: transparent;
+}
+table select:focus{
+	outline: none;
+}
+
+table img{
+	width:  60%;
+}
+.container_serch{
+	/* border: 2px solid red; */
+	align-items: center;
+	margin: 10px;
+    margin-left: 530px;
+	width: 470px;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+}
+#searchinput{
+    width: 450px;
+    height: 40px;
+    font-size: large;
+    border: 2px solid #555;
+    padding: 10px;
+	
+   
+}

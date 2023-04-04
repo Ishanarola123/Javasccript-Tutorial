@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Access json object there are needed the dot operator(.)</p>
+<div id="mydiv"></div>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+var obj={"name":"ishanarola","mobile":"123456789","city":"surat"}
+let name=obj.name;
+console.log(name);
+let mobile=obj.mobile;
+console.log(mobile);
+
+
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+//parse method converts Json string to convert into json object 
+
+const obj1 = JSON.parse(text);
+console.log(obj1);
+obj1.birth = new Date(obj1.birth);
+
+document.getElementById("demo").innerHTML = obj1.name + ", " + obj1.birth;
+
+const text2= JSON.stringify(obj1);
+console.log(text2);
+
+console.log("type of text is" + typeof(text));
+console.log("type of text2 is" + typeof(text2));
+//date format are not same in the both variable 
+console.log(text==text2);
+
+//loop for accessing the object value
+for (const key in obj1) {
+   
+        document.getElementById("demo1").innerHTML+= key + " " + obj1[key] + "<br>";
+        
+}
+</script>
+</body>
+</html>

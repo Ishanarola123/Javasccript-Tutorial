@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date -->
+
+<p id="demo"></p>
+
+</body>
+<script>
+    
+    // Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+
+let x1 = 16 + "Volvo";
+document.getElementById("demo").innerHTML= x1;
+
+
+let x2="156"+ "hello"
+document.getElementById("demo").innerHTML= x2;
+
+let x3 = "Volvo" + 16;
+document.getElementById("demo").innerHTML= x3;
+
+// JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+
+// You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+
+let y1 = 123e5;
+let z = 123e-5;
+
+document.getElementById("demo").innerHTML =
+y1 + "<br>" + z;
+
+
+
+let X = 5;
+let y2 = 5;
+let z2 = 6;
+
+document.getElementById("demo").innerHTML =
+(X == y2) + "<br>" + (X == z2);
+
+const person1 = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person1.firstName + " is " + person1.age + " years old.";
+
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"    //returns string
+
+</script>
+</html>

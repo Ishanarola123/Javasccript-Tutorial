@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Template Literals</h2>
+
+<p>Template literals allows variables in strings:</p>
+
+<p id="demo"></p>
+
+
+
+
+<script>
+    let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+//we want that this tags will be display into html in lsit form 
+let html=`<h2>Hello ${header} </h2> <ul>`;
+
+
+    for(const x of tags){
+        html+= `<li> ${x} </li>`
+    }
+   html+=`</ul>`;
+document.getElementById("demo").innerHTML=html;
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- There are different types of JavaScript operators:
+
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+Conditional Operators
+Type Operators -->
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Exponentiation Assignment</h2>
+    <h3>The **= Operator</h3>
+    enter the base number <input type="text" id="base">
+    enter the exponentation number <input type="text" id="exponentation">
+    <button onclick=run()>click</button>
+    <p id="demo"></p>
+
+    <script>
+
+        let run = () => {
+            base = document.getElementById("base").value;
+            exponentation = document.getElementById("exponentation").value;
+
+            base **= exponentation;
+            document.getElementById("demo").innerHTML = "The value of result is" + base;
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

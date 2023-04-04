@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Js vaildation</h1>
+    <p>please input a number between 1 to 10</p>
+
+    <input name="" id="number_input">
+    <button onclick=myFunction()>submit</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function myFunction(){
+            let x=document.getElementById("number_input").value;
+            console.log(x);
+            let text;
+            let texttype;
+            if(isNaN(x) || x<1 || x>10){
+                text="input is not valid";
+               
+            }
+            else{
+                text="input is vaild";
+                if(x%2==0){
+                texttype="even number";
+                }
+                else{
+                    texttype="odd number";
+                }
+               console.log(texttype);
+
+            }
+            console.log(text);
+            document.getElementById("demo").innerHTML=text;  
+            document.getElementById("demo1").innerHTML=texttype; 
+               
+        }
+
+        //here also validaion related data validaiton
+        //like read only and the 
+    </script>
+</body>
+
+</html>

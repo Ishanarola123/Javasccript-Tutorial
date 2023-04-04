@@ -1,0 +1,16 @@
+{
+    "name": "ishanarola",
+    "marks": 100,
+    "Date": "2020-05-21",
+    "courses":["Kotlin","java","php","dbms","oops"],
+    "Address":{
+        "city":"surat",
+        "state":"GUjarat",
+        "pin": 395004,
+        "lon":85.231,
+        "lat":40.235
+    },
+    "married":"false",
+    "dod":null
+
+}

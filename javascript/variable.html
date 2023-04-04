@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Using var
+// Using let
+// Using const
+// Using nothing
+// This four way we declare the variables
+
+var p = 5;
+var q = 6;
+var r = p+ q;
+document.write(r);
+document.write("<br>")
+let x = 5;
+let y = 6;
+let z = x + y;
+document.write(z);
+document.write("<br>")
+
+//undeclared varibales
+a = 5;
+b = 6;
+c = a + b;
+document.write(c)
+document.write("<br>")
+
+
+//var can be reasiigned
+
+// Variables defined with let can not be redeclared.
+
+// Variables defined with let must be declared before use.
+
+// Variables defined with let have block when var has no codeblock it means that var is global keyword and the let is the local variable
+
+// Variables defined with const cannot be Redeclared.
+
+// Variables defined with const cannot be Reassigned.
+
+// Variables defined with const have Block Scope.
+
+const PI = 3.141592653589793;
+// PI = 3.14;      // This will give an error
+// PI = PI + 10;   // This will also give an error
+document.write(PI);
+
+
+//constant arrays 
+
+// we  can not change the constant varibale values but you can change the array element also
+// we can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// we can change an element:
+cars[0] = "Toyota";
+
+// we can add an element:
+cars.push("Audi");
+
+//we can change, add in constant array
+//but if we want to direct change the whole array you can't 
+
+
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+
+//constant variables is just like let it is also work as let variables.
+//Redeclaring an existing var or let variable to const, in the same scope, is not allowed:
+
+
+//here there are the three scope of variables 
+//like global function and block scope 
+//global scop var which is defined by var keyword it also access by global keyword
+let a=10;
+function sum(){
+    var b=10;
+    b=b+1;
+    a=11;
+    console.log(b);//prints 11
+    console.log(a);//print 11
+}
+// console.log(b); //not defined error
+sum();//11 and 11
+//here let has global scope if it is declared in function then it has local scope
+console.log(a);//print 11
+
+
+const arr=[1,2,3];
+//edit
+arr[1]=5;
+// arr=[4,5,6]; //it gives an error
+console.log(arr);
+
+
+
+
+
+</script>
+</body>
+</html>

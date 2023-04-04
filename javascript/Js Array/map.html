@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>mapping methods in javascript</p>
+<p id="demo"></p>
+<script>
+  const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+
+let text = "";
+for (const x of fruits.entries()) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+
+// document.getElementById("demo").innerHTML = fruits.get("apples");
+// document.getElementById("demo").innerHTML = fruits.get();
+</script>
+</body>
+</html>

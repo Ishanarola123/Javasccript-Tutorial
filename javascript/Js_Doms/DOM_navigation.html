@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="id01">My First Page</h1>
+    <p id="id02"></p>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p>Click the button to change the color of all p elements.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is new.");
+        para.appendChild(node);
+
+        const element = document.getElementById("div1");
+        element.appendChild(para);
+
+        //create element--> create textnode --> appendchild-- >append child into div
+
+        function myFunction() {
+            const myCollection = document.getElementsByTagName("p");
+            for (let i = 0; i < myCollection.length; i++) {
+                myCollection[i].style.color = "blue";
+            }
+        }
+    </script>
+</body>
+
+</html>

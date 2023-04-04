@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>JavaScript if</h2>
+
+  <p>TIme based greeting</p>
+  <p id="demo">Good Evening!</p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+
+  <script>
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+
+
+
+    let day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+    }
+    document.getElementById("demo").innerHTML = day;
+
+    //same code block 
+
+    switch (new Date().getDay()) {
+      case 4:
+      case 5:
+        text = "Soon it is Weekend";
+        break;
+      case 0:
+      case 6:
+        text = "It is Weekend";
+        break;
+      default:
+        text = "Looking forward to the Weekend";
+    }
+    document.getElementById("demo2").innerHTML = text;
+  </script>
+
+</body>
+
+</html>

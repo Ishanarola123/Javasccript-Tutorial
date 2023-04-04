@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>please Click on the button</h2>
+    <button onclick=myfunction()>Click to me to disply time and date</button>
+    <p id="demo"></p>
+    <p id="p1">This is my first javascript program</p>
+    <button onclick=changetxt()>click me to change this pragraph</button>
+
+    <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+
+    <p>Javascript is the case sensitive</p>
+
+    <p id="demo2"></p>
+
+    <!-- Function parameters are listed inside the parentheses () in the function definition.
+
+Function arguments are the values received by the function when it is invoked.
+
+Inside the function, the arguments (the parameters) behave as local variables. -->
+   <p id="demo3"></p>
+
+
+    <script>
+        document.write("The multiplication of two number is:" + 9 * 5);
+
+        function myfunction() {
+            document.getElementById("demo").innerHTML = Date();
+            //change the html content
+            document.getElementById("demo").style.fontSize = "35px";
+
+        }
+
+        let changetxt = () => {
+            document.getElementById("p1").innerHTML = "This is new paragraph content";
+            document.write("The paragraph is changed!");
+        }
+
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+        document.getElementById("demo2").innerHTML = "The value in fahrenhit is " +  toCelsius(77);
+
+        let x = toCelsius(77);
+        let text = "The temperature is " + x + " Celsius";
+        document.getElementById("demo3").innerHTML = text;
+       
+        //also we can call the function 
+        let text2 = "The temperature is " + toCelsius(77) + " Celsius";
+
+    //also change the content of the paragraph
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Js maps</p>
+    <p>A Map holds key-value pairs where the keys can be any datatype.
+
+        A Map remembers the original insertion order of the keys.</p>
+
+    <p>In conclusion, the forEach() and map() methods are both used to loop through arrays and objects. The forEach()
+        method does not return a new array, whereas the map() method returns a new array.
+        The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop
+        through the elements of an array.ˀ</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+
+        const arr2 = arr.map(double);
+        document.getElementById("demo").innerHTML = arr2;
+
+        function double(value, index) {
+            return value * 2;
+        }
+        //maps give the new array also it transform the elements into array
+        //make new map object 
+        
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        let text = "";
+        fruits.forEach(function (value, key) {
+            text += key + ' = ' + value*2 + "<br>"
+        })
+
+
+
+        document.getElementById("demo2").innerHTML = text;
+
+        var myObject = { 'a': 1, 'b': 2, 'c': 3 };
+//if we want that in for each loop object can be print then find the keys of that object 
+//object.keys and then running the loop 
+       console.log(Object.keys(myObject));
+      
+      const arrnew=Object.keys(myObject);
+      
+
+        Object.keys(myObject).forEach(function (key, index) {
+            console.log(myObject[key]);
+            myObject[key] *= 2;
+        });
+
+
+        console.log(myObject);
+// => { 'a': 2, 'b': 4, 'c': 6 }
+    </script>
+</body>
+
+</html>

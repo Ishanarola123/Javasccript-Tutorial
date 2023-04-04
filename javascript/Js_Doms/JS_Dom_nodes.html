@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+      </div>
+      <script>
+        //create element
+        const para = document.createElement("p");
+        //create textnode of the element 
+        const node = document.createTextNode("This is new.");
+        //append textnode 
+        para.appendChild(node);
+        
+        const element = document.getElementById("div1");
+        //again append the para child into the main node 
+        element.appendChild(para);
+
+        const h1=document.createElement("h1");
+        const heading=document.createTextNode("This is the JS DOM node tutorials");
+        h1.appendChild(heading);
+
+        element.appendChild(h1);
+       
+        </script>      
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Input validation</h1>
+    <p>Enter the number between 5 to 10</p>
+    <input type="text" name="" id="input">
+    <button onclick="test()"> Test</button>
+    <p id="demo"></p>
+    <script>
+        let test = () => {
+            let input = document.getElementById("input").value;
+            // if(input<5){
+            //     console.error();
+            //     console.log(Error);
+            //     document.getElementById("demo").innerHTML="";
+            // }
+            // else if(input>10){
+            //     console.error();
+            //     document.getElementById("demo").innerHTML="";
+            // }
+            // else{
+            //     console.log("vaild input");
+            //     document.getElementById("demo").innerHTML="vaild input";
+            // }
+            const message = document.getElementById("demo");
+            message.innerHTML = "";
+            let x=input;
+            try {
+                if (x.trim() == "") throw "empty";
+                if (isNaN(x)) throw "not a number";
+                x = Number(x);
+                if (x < 5) throw "too low";
+                if (x > 10) throw "too high";
+            }
+            catch (err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
+</body>
+
+</html>

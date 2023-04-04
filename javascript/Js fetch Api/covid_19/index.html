@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Covid19 Data</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Covid 19 Data Read from Json File</h1>
+	<!-- <button value="submit" id="btn" type="submit">Get Data </button> -->
+	<div class="container_serch">
+		<input type="text" name="" id="searchinput" onkeyup="search()" placeholder="search country">
+	</div>
+	<table border="1" id="mytable">
+		<thead>
+			<tr>
+				<th>Index</th>
+				<th>country</th>
+				<th>date</th>
+				<th>New Confirmed</th>
+				<th>New Deaths</th>
+				<th>Total Confirmed</th>
+				<th>Total Deaths</th>
+				<th>New Recovered</th>
+			</tr>
+		</thead>
+		<tbody id="data">
+			<!-- Prodcuts from javascript file in here. -->
+		</tbody>
+	</table>
+	<script src="script.js"></script>
+</body>
+
+</html>

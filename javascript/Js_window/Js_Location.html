@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <input type="button" value="Load new document" onclick="newDoc()">
+    <input type="button" value="Back" onclick="goBack()">
+    <input type="button" value="Forward" onclick="goForward()">
+    <script>
+        document.getElementById("demo").innerHTML =
+            "Page hostname is " + window.location.hostname;
+        document.getElementById("demo1").innerHTML =
+            "Page pathname is " + window.location.pathname;
+        document.getElementById("demo2").innerHTML =
+            "Page pathname is " + window.location.protocol;
+        document.getElementById("demo3").innerHTML =
+            "Port number is " + window.location.port;
+        function newDoc() {
+            window.location.assign("https://www.w3schools.com")
+        }
+        function goBack() {
+            // The history.back() method loads the previous URL in the history list.
+            window.history.back()
+        }
+        function goForward() {
+            window.history.forward()
+        }
+    </script>
+</body>
+
+</html>

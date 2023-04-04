@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+        let txt = "";
+        //always pass the function as the arguments in the foreach loop 
+
+        numbers.forEach(myFunction);
+
+        //function has three parameter --> itemvalue,index,array 
+        function myFunction(value, index, array) {
+            txt += value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+        //Note that the function takes 3 arguments:
+        // The item value
+        // The item index
+        // The array itself
+
+        const numbers1 = [45, 4, 9, 16, 25];
+        const numbers2 = numbers1.map(myFunction2);
+
+        document.getElementById("demo1").innerHTML = numbers2;
+
+        function myFunction2(value, index, array) {
+            return value * 2;
+        }
+
+        //map is give the new array after the oeprate on each value of original array 
+
+        const number3 = numbers1.map(modulofunction);
+        document.getElementById("demo2").innerHTML = number3;
+
+        function modulofunction(value) {
+            return value % 5;
+        }
+
+        //filter use when we want to pass the some condition
+
+        //suppose we want that which element is greater than 20
+
+        //filter can also give the new array 
+        const over20 = numbers1.filter(functionOver20);
+        document.getElementById("demo3").innerHTML = over20;
+
+        function functionOver20(value) {
+            return value > 20;
+        }
+        //reduce function use sum of array element left to right
+        //reduce is make the only single element array 
+        let sum = numbers1.reduce(sumfun);
+        document.getElementById("demo4").innerHTML = `The sum of array elements is ${sum}`;
+
+        function sumfun(total, value, index, array) {
+            return total + value;
+        }
+
+        //reduceright is make sum of array element right to left
+        let sumrighttoleft = numbers1.reduceRight(sumfun);
+        document.getElementById("demo5").innerHTML = `The sum of array elemenets right to left is ${sumrighttoleft}`;
+
+        let sum_more = numbers1.reduce(sumfun, 100);
+        document.getElementById("demo6").innerHTML = `The sum of array elements is ${sum_more}`;
+
+        const over_20 = numbers1.every(functionOver20);
+        document.getElementById("demo7").innerHTML = `Here All elements over20 is: ${over_20} `;
+
+        const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits.indexOf("Apple") + 1;
+        document.getElementById("demo8").innerHTML = `Here the apple find in ${position} position`;
+
+        //from is make the strings to in array object 
+        //it makes separate
+        const myArr = Array.from("ABCDEFG");
+        document.getElementById("demo9").innerHTML = myArr;
+
+        const arr = ["Banana", "Orange", "Apple", "Mango"];
+        const keys = arr.keys();
+
+        let text = "";
+
+        //we also make it with the for each loop
+        arr.forEach(keysfunction)
+
+        function keysfunction(value, index, array) {
+            text += index + " " + value + "<br>";
+        }
+
+        // for (let x of keys) {
+        //     text += x + " " + arr[x] + "<br>";
+        // }
+
+        document.getElementById("demo10").innerHTML = text;
+
+        let f = arr.entries();
+        for (const x of f) {
+            document.getElementById("demo11").innerHTML += x;
+
+        }
+
+        //if we want that like array has map method then object has also map method 
+        const obj1 = { a: 4, b: 7 };
+
+        //there are to define user define map function that which map method use by default it use the array map method
+        //Object.map(obj1, ()=>{}) 
+
+        let map = function (obj, fn, ctx) {
+            return Object.keys(obj).reduce((a, b) => {
+                a[b] = fn.call(ctx || null, b, obj[b]);
+                return a;
+            }, {});
+        };
+
+
+        const x = map({ a: 2, b: 4 }, (k, v) => {
+            return v * 2;
+        });
+       console.log("here the new object ");
+       console.log(x);
+    </script>
+
+    <!-- The main diffrence between for each and map method is that map is give the new array when for each just iterate the array. -->
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript strings</h1>
+    <p>strings methods</p>
+    <div>
+        <h2>strings methods--extract string methods</h2>
+        <p></p>
+        <p>The sliced (extracted) part of the string is:</p>
+        <p id="demo2"></p>
+        <p id="demo12"></p>
+    </div>
+
+</body>
+<script>
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text.length;
+    console.log(length);
+
+    let answer1 = "It's alright";
+    let answer2 = "He is called 'Johnny'";
+    let answer3 = 'He is called "Johnny"';
+    console.log(answer1 + answer2 + answer3);
+
+    // let text1 = "We are the so-called "Vikings" from the north.";  --> that's not include the double qoute into the strings.
+    let text2 = "We are the so-called \"Vikings\" from the north.";
+    console.log(text2);
+
+    let text3 = 'It\'s alright.';
+    console.log(text3);
+
+
+    //     Six other escape sequences are valid in JavaScript:
+
+    // Code	Result
+    // \b	Backspace
+    // \f	Form Feed
+    // \n	New Line
+    // \r	Carriage Return
+    // \t	Horizontal Tabulator
+    // \v	Vertical Tabulator
+
+    //define string is the both the way
+    let x = "John";
+    let y = new String("John");
+    console.log(x + y);
+
+    // Note the difference between (x==y) and (x===y).
+    console.log("both string are" + (x == y));
+    console.log("both string are" + (x === y));
+
+//here == operator is for equal to operator
+//here === operator is for not equal to operator
+
+
+
+// There are 3 methods for extracting a part of a string:
+
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+// slice() extracts a part of a string and returns the extracted part in a new string.
+
+let text4 = "Apple, Banana, Kiwi";
+console.log(text4);
+let part = text4.slice(7,13);
+document.getElementById("demo2").innerHTML = part; 
+
+// JavaScript counts positions from zero.
+
+// First position is 0.
+
+// Second position is 1.
+
+
+let part2 = text4.slice(7);
+console.log(part2);
+
+let part3 = text4.slice(-10);
+console.log(part3);
+
+//if we pass the one parameter in slice function then it conduct as start position to end positions
+//if we pass the negetive parameter in slice then its conduct count from reverse side.
+
+
+let part5 = text4.slice(-12, -6);
+console.log(part5);
+
+// substr() is similar to slice().
+
+// The difference is that the second parameter specifies the length of the extracted part.
+
+
+let part6 = text4.substr(-4);
+console.log(part6);    //conducts ending point 0
+
+let text5 = "Please visit Microsoft!";
+let newText = text5.replace("Microsoft", "W3Schools");
+console.log(newText);
+
+//string methods
+// String length
+// String slice()
+// String substring()
+// String substr()
+// String replace()
+// String replaceAll()
+// String toUpperCase()
+// String toLowerCase()
+// String concat()
+// String trim()
+// String trimStart()
+// String trimEnd()
+// String padStart()
+// String padEnd()
+// String charAt()
+// String charCodeAt()
+// String split()
+
+
+//replace can match only the firststring if you want to that replace all the string then use the g option that is called as global 
+let t= "a,b,c,d,e,f";
+const myArray = t.split(",");
+document.getElementById("demo").innerHTML = myArray[0];
+
+//javascript String search method
+// String indexOf()
+// String lastIndexOf()
+// String search()
+// String match()
+// String matchAll()
+// String includes()
+// String startsWith()
+// String endsWith()
+
+
+// The indexOf() method returns the index of (position of) the first occurrence of a string in a string:
+// The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+// Use the prototype property to add a new property to all objects of a given type:
+let name = null;
+let text9 = "missing";
+let result = name ?? text9;
+document.getElementById("demo12").innerHTML = "The name is " + result; 
+</script>
+
+</html>
